@@ -51,10 +51,10 @@ extension Font {
 			return Font(descriptor: fontDescriptor, size: pointSize)
 		#else
 			let fontDescriptor = UIFontDescriptor(name: fontName, size: pointSize).addingAttributes([
-				UIFontDescriptorFeatureSettingsAttribute: [
+				UIFontDescriptor.AttributeName.featureSettings: [
 					[
-						UIFontFeatureTypeIdentifierKey: kNumberSpacingType,
-						UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector
+						UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
+						UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector
 					]
 				]
 			])
