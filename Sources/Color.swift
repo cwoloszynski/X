@@ -34,7 +34,7 @@ extension Color {
 		}
 
 		// Invalid if not 3, 6, or 8 characters
-		let length = hex.characters.count
+		let length = hex.count
 		if length != 3 && length != 6 && length != 8 {
 			return nil
 		}
