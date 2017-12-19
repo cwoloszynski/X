@@ -1,5 +1,5 @@
 //
-//  TextStyle.swift
+//  FontTextStyle.swift
 //  X
 //
 //  Created by Sam Soffes on 8/26/16.
